@@ -13,7 +13,7 @@ mongoose.connect('mongodb+srv://parbhaneaditya:aditya12345@taskly1.hlphbso.mongo
 }).then(() => console.log("Connected to MongoDB")).catch(console.error);
 
 // Models
-const Todo = require('./models/Todo');
+const Todo = require('./models/todo');
 
 app.get('/todos', async (req, res) => {
 	const todos = await Todo.find();
